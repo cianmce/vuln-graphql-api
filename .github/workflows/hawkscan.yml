@@ -13,6 +13,6 @@ jobs:
           SERVER_PORT=3000
           docker-compose up --build --detach
       - name: Run HawkScan
-          uses: stackhawk/hawkscan-action@v1.3.0
-          with:
+        uses: stackhawk/hawkscan-action@v1.3.0
+        with:
           apiKey: ${{ secrets.HAWK_API_KEY }}
