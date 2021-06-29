@@ -8,6 +8,7 @@ and cleans up the Docker build for quick deployment and testing with docker-comp
  - Make sure _docker-compose_ is present on the system.
  - Set `SERVER_PORT` in the environment and run `docker-compose up` 
  
+
 ## Run application
 ```bash
 export SERVER_PORT=3000
