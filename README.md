@@ -8,7 +8,14 @@ and cleans up the Docker build for quick deployment and testing with docker-comp
  - Make sure _docker-compose_ is present on the system.
  - Set `SERVER_PORT` in the environment and run `docker-compose up` 
  
+## Run application
 ```bash
-SERVER_PORT=3000
+export SERVER_PORT=3000
 docker-compose up
+```
+
+## Run scan
+```sh
+source ~/.hawk/hawk.rc
+docker run -e API_KEY=${HAWK_API_KEY} --rm -v $(pwd):/hawk:rw -it stackhawk/hawkscan:latest
 ```
