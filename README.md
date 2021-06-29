@@ -1,5 +1,7 @@
 # vuln-graphql-api
 
+[![HawkScan](https://github.com/cianmce/vuln-graphql-api/actions/workflows/hawkscan.yml/badge.svg)](https://github.com/cianmce/vuln-graphql-api/actions/workflows/hawkscan.yml)
+
 This fork of [vulnerable-graphql-api](https://github.com/CarveSystems/vulnerable-graphql-api) simplifies 
 and cleans up the Docker build for quick deployment and testing with docker-compose. 
 
@@ -8,7 +10,6 @@ and cleans up the Docker build for quick deployment and testing with docker-comp
  - Make sure _docker-compose_ is present on the system.
  - Set `SERVER_PORT` in the environment and run `docker-compose up` 
  
-
 ## Run application
 ```bash
 export SERVER_PORT=3000
